@@ -24,7 +24,8 @@ function CalcularPerimetroCuadrado(){
 
     const perimetro = perimetroCuadrado(value);
 
-    alert(perimetro);
+    document.getElementById("resultado").innerHTML = perimetro;
+
     
 }
 
@@ -36,7 +37,7 @@ function CalcularAreaCuadrado(){
 
     const area = areaCuadrado(value);
 
-    alert(area);
+    document.getElementById("resultado").innerHTML = "<h2>El área del cuadrado es:</h2>"+area;
 }
 
 function selectionfigu() {
@@ -45,3 +46,4 @@ function selectionfigu() {
 
     const operaciones = document.getElementById('operation').style.display = 'block';
 }
+

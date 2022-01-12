@@ -1,3 +1,9 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 body{
     margin: 0%;
 }
@@ -10,6 +16,7 @@ h1{
 h2{
     font-family: poppins;
     font-weight: 600;
+    color: black;
 }
 
 h3{
@@ -54,12 +61,11 @@ h3{
     justify-content: center;
 }
 
-.cuadro-naranja1{
+.cuadrado{
 
     width: 130px;
     height: 130px;
     margin-top: 32px;
-    background-color: #F29151;
     margin-left: 46px;
 }
 
@@ -139,5 +145,113 @@ h3{
     transform: translate(-50%, -50%);
     width: 539px;
     color: #F29151;
+
+}
+
+#resultado{
+    color: #F29151;
+    font-size: 150px;
+    text-align: center;
+}
+
+button{
+    background-color: #F29151;
+    color: white;
+    height: 50px; 
+    border-radius: 12px;
+    border: none;
+    margin: 10px;
+}
+
+#InputCuadrado{
+    height: 150px;
+    font-family: 'Kreon', serif;
+    font-size: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#operation{
+    align-items: center;
+    text-align: center;
+}
+
+.container-white{
+    align-items: center;
+    background-color: red;
+}
+
+-----Media Query---
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .container-white2{
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 80px;
+    height: 42px;
+    background-color: black;
+    box-shadow: 0px 3px 60px #00000029;
+}
+    .logo{
+        align-items: center;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
 
 }

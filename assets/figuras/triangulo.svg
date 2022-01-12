@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="Triangulo" transform="translate(-658 -196)">
+    <rect id="Rectángulo_3" data-name="Rectángulo 3" width="130" height="130" transform="translate(658 196)" fill="#f29151"/>
+    <text id="Tríangulo" transform="translate(682 314)" fill="#fff" font-size="16" font-family="Poppins-Black, Poppins" font-weight="800"><tspan x="0" y="0">Tríangulo</tspan></text>
+    <g id="Polígono_5" data-name="Polígono 5" transform="translate(680 216)" fill="none">
+      <path d="M43.5,0,87,74H0Z" stroke="none"/>
+      <path d="M 43.5 9.866493225097656 L 8.739089965820312 69 L 78.26091003417969 69 L 43.5 9.866493225097656 M 43.5 0 L 87 74 L 0 74 L 43.5 0 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@700&family=Poppins:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="splide/dist/css/splide.min.css">
+    <script src="splide/dist/js/splide.min.js"></script>
     <title>Calculadora figuras</title>
 </head>
 <body>
@@ -26,56 +30,62 @@
 
     <section>
         <div>
-            <h2 style="text-align: center; font-size: 30px; color: #707070; margin: 0%;">APP para conocer el área de un triangulo:</h2>
+            <h2 style="text-align: center; font-size: 30px; color: #707070; margin: 0%;">Selecciona la figura geométrica</h2>
         </div>
 
         <div class="barra-azul">
 
-            <div class="cuadro-naranja1" onclick="selectionfigu()">
-                <h3 style="color: white; margin-top: 100px; margin-left: 12%;">Cuadrado</h3>
+            <div class="cuadrado" onclick="selectionfigu()">
+                <img src="\assets\figuras\cuadrado.svg" alt="cuadrado"> <h4 style="color: white; margin-top: 100px; margin-left: 12%;"></h4>
             </div>
-            <div class="cuadro-naranja2"></div>
-            <div class="cuadro-naranja3"></div>
-            <div class="cuadro-naranja4"></div>
-            <div class="cuadro-naranja5"></div>
-            <div class="cuadro-naranja6"></div>
+            <div class="cuadro-naranja2"><h4 style="color: white; margin-top: 100px; margin-left: 12%;">Círculo</h4></div>
+            <div class="cuadro-naranja3">Círculo</div>
         </div>
 
         <div class="container-white1">
-
             <div id="selecciona">
-                <h1>Selecciona la figura</h1>
+                <h1>Primero Selecciona la figura</h1>
             </div>
-
+            
             <div id="operation" style="display: none;">
                 <form>
                     <label for="InputCuadrado">
-                    Escribe cuánto mide cada lado de tu cuadrado:
-                
-                    </label>
+                        
+                        <h3>Escribe cuánto mide cada lado de tu cuadrado:</h3> 
                     
+                    </label>
+                        
                     <input id="InputCuadrado" type="number">
-    
-                    <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular perímetro</button>
-    
-                    <button type="button" onclick="CalcularAreaCuadrado()">Calcular el área</button>
+                    
+                    <button id="button-calcular" type="button" onclick="CalcularPerimetroCuadrado()"><h5>Calcular perímetro</h5></button>
+        
+                    <button id="button-" type="button" onclick="CalcularAreaCuadrado()"><h5>Calcular área</h5></button>
                 </form>
             </div>
-
+    
         </div>
-
+    
         <div class="container-white2">
-
             
+            <h1 style="color: #F29151; text-align: center;">Resultado:</h1>
 
+    
+            <h3 id="resultado"></h3>
+    
+    
+        </div>
 
         </div>
 
+
+        
         
 
     </section>
 
     <script src="./Operaciones.js"></script>
+
+
 </body>
 </html>
 
