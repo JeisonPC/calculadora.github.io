@@ -134,7 +134,7 @@ h3{
 }
 
 button{
-    background-color: #F29151;
+    background-color: #5CA1D6;
     color: white;
     height: 50px; 
     border-radius: 12px;
@@ -155,17 +155,14 @@ button{
     text-align: center;
 }
 
-.container-white{
-    align-items: center;
-    background-color: red;
-}
-
 @media (min-width:320px) and (max-width:480px){ 
     
     /* smartphones, iPhone, portrait 480x320 phones */ 
 
     .barra-azul{
         height: 142px;
+        margin: 0;
+        top: 0%;
     }
 
     .cuadradosvg{
@@ -195,7 +192,7 @@ button{
     }
 
     .logo{
-        width: 146px;
+        width: 156px;
         margin: 10px auto;
         justify-content: center;
         align-items: center;
@@ -222,9 +219,12 @@ button{
     .select-figura{
         position: relative;
         top: 28px;
+        z-index: 1;
+    }
+
+    .select-figura h2{
         font-size: 15px;
         color: white;
-        z-index: 1;
     }
 
     .container-white1{
@@ -237,18 +237,72 @@ button{
         background-color: white;
         box-shadow: 0px 3px 60px #00000029;
         top: 18px;
+        border-radius: 10px;
     }
 
     .container-white1 h1{
         color: #F29151;
         font-size: 22px;
-        text-align: center;
         position:relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         
     }
+
+    .container-white2{
+        position: relative;
+        width: 284px;
+        height: 174px;
+        margin: auto;
+        top: 83px;
+        border-radius: 10px;
+    }
+
+    .container-white2 h1{
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    #InputCuadrado{
+    height: 100px;
+    width: 180px;
+    font-family: 'Kreon', serif;
+    font-size: 60px;
+    border-radius: 5px;
+    text-align: center;
+    }
+
+    label h3{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    button{
+        background-color: #5CA1D6;
+        color: white;
+        height: 30px; 
+        border-radius: 20px;
+        border: none;
+        margin-top: 30px;
+    }
+
+    button h2{
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        margin: auto;
+        width: 100px;
+    }
+
+    #resultado{
+        color: #F29151;
+        font-size: 100px;
+        text-align: center;
+    }
+
+
+}
 
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 
