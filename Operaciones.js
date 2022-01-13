@@ -16,6 +16,8 @@ const areaCirculo = (radio) => PI * radio ** 2;
 
 //Interactuar con el HTML
 
+//CUADRADOS
+
 function CalcularPerimetroCuadrado(){
 
     const input = document.getElementById("InputCuadrado");
@@ -40,6 +42,13 @@ function CalcularAreaCuadrado(){
     document.getElementById("resultado").innerHTML = "<h2>El área del cuadrado es:</h2>"+area;
 }
 
+//TRIANGULOS
+
+function CalcularAreaTriangulo(){
+    const 
+}
+
+//OPERACIÓN ESCONDIDA SI NO DA CLIC EN FIGURA
 function selectionfigu() {
 
     const texto = document.getElementById('selecciona').style.display = 'none';
