@@ -30,6 +30,13 @@ h3{
     margin: 27px 14px;
 }
 
+.select-figura{
+    text-align: center; 
+    font-size: 30px; 
+    color: #707070; 
+}
+
+
 .naranjasvg{
 
     position: fixed;
@@ -153,24 +160,9 @@ button{
     background-color: red;
 }
 
-/* ----------- Laptops ----------- */
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
-
-@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:320px) and (max-width:480px){ 
+    
+    /* smartphones, iPhone, portrait 480x320 phones */ 
 
     .barra-azul{
         height: 142px;
@@ -182,6 +174,7 @@ button{
         height: 85px;
         margin-top: 28px;
         margin-left: 11px;
+        cursor: pointer;
     }
     
     .triangulosvg{
@@ -203,27 +196,59 @@ button{
 
     .logo{
         width: 146px;
-        margin: auto;
+        margin: 10px auto;
         justify-content: center;
         align-items: center;
         text-align: center;
         display: block;
+
     }
 
     .titulo{
-        top: 20%;
+        margin-top: 0px;
         color:white;
         font-size: 26px;
         width: 269px;
         left: 50%;
         transform: translate(-50%, -50%);
+        position:relative;
+        margin-top: 30px;
     }
 
     body{
         background-color: #F29151;
     }
 
-}
+    .select-figura{
+        position: relative;
+        top: 28px;
+        font-size: 15px;
+        color: white;
+        z-index: 1;
+    }
+
+    .container-white1{
+
+        position:relative;
+        justify-content: center;
+        margin: auto;
+        width: 284px;
+        height: 174px;
+        background-color: white;
+        box-shadow: 0px 3px 60px #00000029;
+        top: 18px;
+    }
+
+    .container-white1 h1{
+        color: #F29151;
+        font-size: 22px;
+        text-align: center;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
 
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 

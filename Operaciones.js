@@ -43,16 +43,17 @@ function CalcularAreaCuadrado(){
 }
 
 //TRIANGULOS
-
+/*
 function CalcularAreaTriangulo(){
     const 
 }
-
+*/
 //OPERACIÓN ESCONDIDA SI NO DA CLIC EN FIGURA
+
 function selectionfigu() {
 
-    const texto = document.getElementById('selecciona').style.display = 'none';
+    const texto = document.getElementById("selecciona").style.display = "none";
 
-    const operaciones = document.getElementById('operation').style.display = 'block';
+    const operaciones = document.getElementById("operation").style.display = "block";
 }
 
